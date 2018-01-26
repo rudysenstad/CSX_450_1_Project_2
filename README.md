@@ -15,11 +15,11 @@ We will implement an unsupervised learning technique such as k-means to cluster 
 
 The USDA plants dataset (available [here](https://archive.ics.uci.edu/ml/machine-learning-databases/plants/))
 
-Number of samples: 34,781 
-Number of attributes: 70 (69 used)
-Expected Dataframe Dimensions: 34781 rows x 70 columns
-Column Data Types: All columns are a boolean if present in that state/country
-Target: n/a
+- Number of samples: 34,781 
+- Number of attributes: 70 (69 used)
+- Expected Dataframe Dimensions: 34781 rows x 70 columns
+- Column Data Types: All columns are a boolean if present in that state/country
+- Target: n/a
 
 ** the plant name will be omitted from clustering as it is specific to each row and therefore would not contribute too clustering
 
