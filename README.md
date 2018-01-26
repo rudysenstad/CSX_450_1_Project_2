@@ -53,7 +53,6 @@ Given that this is a clustering task, we can measure the success of our model us
 
 
 # Plants
-========
 
 ## Domain
 
