@@ -12,16 +12,12 @@ Seeds
 
 ## Domain
 
-This problem uses measurements of geometrical properties of kernels belonging to three different varieties of wheat. As described in the paper "Comple
-te Gradient Clustering Algorithm for Features Analysis of X-Ray Images" by Małgorzata CharytanowiczJerzy NiewczasPiotr KulczyckiPiotr A. KowalskiSzymo
-n ŁukasikSławomir Żak, published in  Advances in Intelligent and Soft Computing ([paper](https://link.springer.com/chapter/10.1007/978-3-642-13105-9_2
-)), machine learning is an effective at recognizing different types of wheat grains.
+This problem uses measurements of geometrical properties of kernels belonging to three different varieties of wheat. As described in the paper "Complete Gradient Clustering Algorithm for Features Analysis of X-Ray Images" by Małgorzata CharytanowiczJerzy NiewczasPiotr KulczyckiPiotr A. KowalskiSzymon ŁukasikSławomir Żak, published in  Advances in Intelligent and Soft Computing ([paper](https://link.springer.com/chapter/10.1007/978-3-642-13105-9_2)), machine learning is an effective at recognizing different types of wheat grains.
 
 
 ## Problem Statement
 
-We will implement an unsupervised learning technique such as k-means to cluster the measured samples of wheat grains. Through this process, we will pr
-oject the 7 attributes to 2 dimensions. We hope to extract a clear relation between the physical attributes of wheat seeds and the type of wheat.
+We will implement an unsupervised learning technique such as k-means to cluster the measured samples of wheat grains. Through this process, we will project the 7 attributes to 2 dimensions. We hope to extract a clear relation between the physical attributes of wheat seeds and the type of wheat.
 
 
 ## Dataset
@@ -31,12 +27,22 @@ The seeds dataset (available [here](http://archive.ics.uci.edu/ml/datasets/seeds
 - Number of samples: 210
 - Number of attributes: 7
 - Expected Dataframe Dimensions: 210 rows x 7 columns
-- Column Data Types: All columns are float
+- Column Data Types: All columns are real-valued continuous and data type float 
 - Target: n/a
 - Theoretical Memory Footprint: 11.5 kB
    - 210 rows x 7 columns = 1470
    - 1470 elements x 8 bytes per float = 11,760 bytes = 11.5 kB
 - Acutal Memory Footprint: 13.7 kB
+
+Attributes
+    1. area A,
+    2. perimeter P,
+    3. compactness C = 4piA/P^2,
+    4. length of kernel,
+    5. width of kernel,
+    6. asymmetry coefficient
+    7. length of kernel groove. 
+
 
 ** An 8th column, the seed type (1,2 or 3), will be omitted from clustering since it is a label rather than an attribute.
 ![Dataset Summary](images/seeds-dataset-summary.png "R dataset summary")
@@ -60,6 +66,7 @@ A solution to this problem will be a cluster analysis using a model such as a KM
 ## Benchmark Model
 
 n/a
+Clustering generally does not have a benchmark model since we have no targets.
 
 
 ## Performance/Evaluation Metric
@@ -77,13 +84,11 @@ Given that this is a clustering task, we can measure the success of our model us
 
 ## Domain
 
-This problem uses data from the USDA plant database (c.2008) including the scientific names and the location (states/territories) of all plants in the
- U.S.A. and Canada.
+This problem uses data from the USDA plant database (c.2008) including the scientific names and the location (states/territories) of all plants in the U.S.A. and Canada.
 
 ## Problem Statement
 
-We will implement an unsupervised learning technique such as k-means to cluster the plants by location. This will project the 69 locations to 2 dimens
-ions. From this we hope to be able to extract some information about the relation between these variables (plant families and locations).
+We will implement an unsupervised learning technique such as k-means to cluster the plants by location. This will project the 69 locations to 2 dimensions. From this we hope to be able to extract some information about the relation between these variables (plant families and locations).
 
 
 ## Dataset
